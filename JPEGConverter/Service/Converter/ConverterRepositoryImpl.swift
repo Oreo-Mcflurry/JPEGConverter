@@ -11,8 +11,8 @@ import UIKit
 final class ConverterRepositoryImpl: ConverterRepository {
 	func makeJpeg(
 		_ image: UIImage,
-		scale: Float = UserDefaultsManger.scale,
-		isEXIFSaved: Bool = UserDefaultsManger.exifSaved
+		scale: Float,
+		isEXIFSaved: Bool
 	) -> UIImage? {
 
 		guard let jpegImage = image.jpegData(compressionQuality: CGFloat(scale)) else { return nil }

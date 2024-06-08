@@ -14,6 +14,7 @@
 		0B0AD5A42C1056970061D015 /* ConverterRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5A32C1056970061D015 /* ConverterRepositoryImpl.swift */; };
 		0B0AD5A82C1056C90061D015 /* ConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5A72C1056C90061D015 /* ConverterRepository.swift */; };
 		0B0AD5AB2C105F950061D015 /* UserDefaultsManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5AA2C105F950061D015 /* UserDefaultsManger.swift */; };
+		0B0AD5AF2C1472C10061D015 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5AE2C1472C00061D015 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0B0AD5A32C1056970061D015 /* ConverterRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterRepositoryImpl.swift; sourceTree = "<group>"; };
 		0B0AD5A72C1056C90061D015 /* ConverterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterRepository.swift; sourceTree = "<group>"; };
 		0B0AD5AA2C105F950061D015 /* UserDefaultsManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManger.swift; sourceTree = "<group>"; };
+		0B0AD5AE2C1472C00061D015 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		0B0AD5A22C10567F0061D015 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0B0AD5AC2C1472AE0061D015 /* View */,
 				0B0AD5A92C105F8A0061D015 /* UserDefaults */,
 				0B0AD5A52C1056B20061D015 /* Converter */,
 			);
@@ -98,6 +101,22 @@
 				0B0AD5AA2C105F950061D015 /* UserDefaultsManger.swift */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		0B0AD5AC2C1472AE0061D015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5AD2C1472B40061D015 /* OnboardingView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B0AD5AD2C1472B40061D015 /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				0B0AD5AE2C1472C00061D015 /* OnboardingView.swift */,
+			);
+			path = OnboardingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +192,7 @@
 				0B0AD5A82C1056C90061D015 /* ConverterRepository.swift in Sources */,
 				0B0AD5AB2C105F950061D015 /* UserDefaultsManger.swift in Sources */,
 				0B0AD5972C1056680061D015 /* ContentView.swift in Sources */,
+				0B0AD5AF2C1472C10061D015 /* OnboardingView.swift in Sources */,
 				0B0AD5A42C1056970061D015 /* ConverterRepositoryImpl.swift in Sources */,
 				0B0AD5952C1056680061D015 /* JPEGConverterApp.swift in Sources */,
 			);

@@ -11,7 +11,20 @@ import SwiftUI
 struct JPEGConverterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            navigationWrapper
+        }
+    }
+    
+    @ViewBuilder
+    var navigationWrapper: some View {
+        if #available(iOS 16, *) {
+            NavigationStack {
+                OnboardingView()
+            }
+        } else {
+            NavigationView {
+                OnboardingView()
+            }
         }
     }
 }

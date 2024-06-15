@@ -19,12 +19,21 @@ struct JPEGConverterApp: App {
     var navigationWrapper: some View {
         if #available(iOS 16, *) {
             NavigationStack {
-                OnboardingView()
+                firstNavigation
             }
         } else {
             NavigationView {
-                OnboardingView()
+                firstNavigation
             }
+        }
+    }
+    
+    @ViewBuilder
+    var firstNavigation: some View {
+        if UserDefaultsManger.isFirstRun {
+            OnboardingView()
+        } else {
+            TabbarView()
         }
     }
 }

@@ -11,6 +11,7 @@ final class UserDefaultsManger {
 	enum UserDefaultsKey: String {
 		case scale
 		case isEXIFSaved
+        case isFirstRun
 	}
 
 	static var scale: Float {
@@ -28,4 +29,12 @@ final class UserDefaultsManger {
 			UserDefaults.standard.setValue(newValue, forKey: UserDefaultsKey.isEXIFSaved.rawValue)
 		}
 	}
+    
+    static var isFirstRun: Bool {
+        get {
+            UserDefaults.standard.bool(forKey: UserDefaultsKey.isFirstRun.rawValue)
+        } set {
+            UserDefaults.standard.setValue(newValue, forKey: UserDefaultsKey.isFirstRun.rawValue)
+        }
+    }
 }

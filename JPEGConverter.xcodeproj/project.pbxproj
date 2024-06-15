@@ -14,6 +14,10 @@
 		0B0AD5A82C1056C90061D015 /* ConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5A72C1056C90061D015 /* ConverterRepository.swift */; };
 		0B0AD5AB2C105F950061D015 /* UserDefaultsManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5AA2C105F950061D015 /* UserDefaultsManger.swift */; };
 		0B0AD5AF2C1472C10061D015 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0AD5AE2C1472C00061D015 /* OnboardingView.swift */; };
+		0B84154C2C1D695400955B5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84154B2C1D695400955B5D /* HomeView.swift */; };
+		0B84154F2C1D6A6200955B5D /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84154E2C1D6A6200955B5D /* TabbarView.swift */; };
+		0B8415522C1D804C00955B5D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8415512C1D804C00955B5D /* SettingView.swift */; };
+		0B8415562C1D811700955B5D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8415552C1D811700955B5D /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		0B0AD5A72C1056C90061D015 /* ConverterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterRepository.swift; sourceTree = "<group>"; };
 		0B0AD5AA2C105F950061D015 /* UserDefaultsManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManger.swift; sourceTree = "<group>"; };
 		0B0AD5AE2C1472C00061D015 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0B84154B2C1D695400955B5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0B84154E2C1D6A6200955B5D /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		0B8415512C1D804C00955B5D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		0B8415552C1D811700955B5D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,9 @@
 		0B0AD5AC2C1472AE0061D015 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0B8415502C1D804500955B5D /* SettingView */,
+				0B84154D2C1D6A5900955B5D /* TabView */,
+				0B84154A2C1D694D00955B5D /* HomeVIew */,
 				0B0AD5AD2C1472B40061D015 /* OnboardingView */,
 			);
 			path = View;
@@ -114,6 +125,47 @@
 				0B0AD5AE2C1472C00061D015 /* OnboardingView.swift */,
 			);
 			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		0B84154A2C1D694D00955B5D /* HomeVIew */ = {
+			isa = PBXGroup;
+			children = (
+				0B8415542C1D810B00955B5D /* ViewModel */,
+				0B8415532C1D810900955B5D /* View */,
+			);
+			path = HomeVIew;
+			sourceTree = "<group>";
+		};
+		0B84154D2C1D6A5900955B5D /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				0B84154E2C1D6A6200955B5D /* TabbarView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		0B8415502C1D804500955B5D /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				0B8415512C1D804C00955B5D /* SettingView.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
+		0B8415532C1D810900955B5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B84154B2C1D695400955B5D /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B8415542C1D810B00955B5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0B8415552C1D811700955B5D /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B0AD5A82C1056C90061D015 /* ConverterRepository.swift in Sources */,
+				0B8415562C1D811700955B5D /* HomeViewModel.swift in Sources */,
 				0B0AD5AB2C105F950061D015 /* UserDefaultsManger.swift in Sources */,
 				0B0AD5AF2C1472C10061D015 /* OnboardingView.swift in Sources */,
+				0B84154C2C1D695400955B5D /* HomeView.swift in Sources */,
+				0B84154F2C1D6A6200955B5D /* TabbarView.swift in Sources */,
+				0B8415522C1D804C00955B5D /* SettingView.swift in Sources */,
 				0B0AD5A42C1056970061D015 /* ConverterRepositoryImpl.swift in Sources */,
 				0B0AD5952C1056680061D015 /* JPEGConverterApp.swift in Sources */,
 			);
